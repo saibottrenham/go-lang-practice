@@ -1,5 +1,118 @@
 package main
 
+// Switch statement time identifier
+// import (
+// 	"fmt"
+// 	"time"
+// )
+
+// func main() {
+// 	switch h := time.Now().Hour(); {
+// 	case h < 6:
+// 		fmt.Println("Good night")
+// 	case h < 12:
+// 		fmt.Println("Good morning!")
+// 	case h < 17:
+// 		fmt.Println("Good afternoon!")
+// 	default:
+// 		fmt.Println("Good evening!")
+// 	}
+// }
+
+// Short switch statement
+// import (
+// 	"fmt"
+// 	"os"
+// 	"strconv"
+// )
+
+// func main() {
+
+// 	switch i, err := strconv.Atoi(os.Args[1]); {
+// 	case err != nil:
+// 		fmt.Print("Error:", err)
+// 	case i > 100:
+// 		fmt.Print("Big ")
+// 		fallthrough
+// 	case i > 0:
+// 		fmt.Print("positive ")
+// 		fallthrough
+// 	default:
+// 		fmt.Print("Number")
+// 	}
+// 	fmt.Println()
+// }
+
+// Switch statemente
+// import (
+// 	"fmt"
+// 	"os"
+// )
+
+// func main() {
+// 	city := os.Args[1]
+
+// 	switch city {
+// 	case "Paris":
+// 		fmt.Println("France")
+// 	case "Tokyo":
+// 		fmt.Println("Japan")
+// 	default:
+// 		fmt.Println("Where")
+// 	}
+// }
+
+// Variable scoping
+// import (
+// 	"fmt"
+// 	"os"
+// 	"strconv"
+// )
+
+// func main() {
+// 	// if n, err := strconv.Atoi("42"); err == nil {
+// 	// 	fmt.Println("there was no error, n is", n)
+// 	// }
+// 	if a := os.Args; len(a) != 2 {
+// 		fmt.Println("Give me a number")
+// 	} else if n, err := strconv.Atoi(a[1]); err != nil {
+// 		fmt.Printf("Cannot convert %q.\n", a[1])
+// 	} else {
+// 		fmt.Printf("%s * 2 %d\n", a[1], n*2)
+// 	}
+// }
+
+// more error handling
+// import (
+// 	"fmt"
+// 	"os"
+// 	"strconv"
+// )
+
+// func main() {
+// 	age := os.Args[1]
+
+// 	n, err := strconv.Atoi(age)
+// 	if err != nil {
+// 		fmt.Println(err)
+// 		return
+// 	}
+// 	fmt.Printf("Success, converted %q to %d", age, n)
+// }
+
+// error handling
+// import (
+// 	"fmt"
+// 	"os"
+// 	"strconv"
+// )
+
+// func main() {
+// 	n, err := strconv.Atoi(os.Args[1])
+// 	fmt.Println("Converted number", n)
+// 	fmt.Println("Error", err)
+// }
+
 // else if conditional statements go
 // import (
 // 	"fmt"
